@@ -15,3 +15,4 @@ def llm(user_msg, instruction):
     response = chat.send_message(user_msg)
     if response and response.text:
         return response.text
+    return 'An error occurred, please try again!'
